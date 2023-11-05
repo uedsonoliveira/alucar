@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.limita-secao{
+    max-width: 100%;
+    margin: 0 20%;
+}
+
+.logo-topo{
+    max-width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo-topo h1{
+    font-size: 25px;
+}
+
+.img-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/capa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-banner{
+    color: #fff;
+    text-align: end;
+    padding: 10px 200px 0 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.381);
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info{
+    padding: 50px 0;
+}
+
+.info h3{
+    margin-bottom: 20px;
+}
+
+.info p{
+    line-height: 30px;
+}
+
+.secao-img{
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.secao-img img{
+    max-width: 100%;
+}
+
+.secao-contato{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(176, 55, 55);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.secao-contato h4{
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    
+}
+
