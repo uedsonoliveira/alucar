@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AluCar - Segurança e garantia na locação de veículos." >
+    <meta name="description" content="AluCar - Segurança e garantia na locação de veículos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>AluCar</title>
 </head>
@@ -66,12 +69,85 @@
         <section class="container-formulario">
             <div class="limita-secao">
                 <div class="formulario">
-
+                    <h3>Análise de cadastro</h3>
+                    <p>Preencha os campos abaixo e analisaremos seus dados.</p>
+                    <p>Se tudo estiver correto ligaremos para marcar uma visita a nossa loja.</p>
+                    <form>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <div class="dados-formulario">
+                                <label>Nome</label>
+                                <input placeholder="digite seu nome" type="text" name="nome" required>
+                            </div>
+                            <div class="dados-formulario">
+                                <label>Data de Nascimento</label>
+                                <input type="date" name="nascimento" required>
+                            </div>
+                            <div class="dados-formulario">
+                                <label>Telefone</label>
+                                <input placeholder="(XX)XXXXX-XXXX" type="tel" maxlength="14" name="telefone" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>CNH</legend>
+                            <div class="dados-formulario">
+                                <label>Número de Registro</label>
+                                <input placeholder="informe o número da sua CNH" type="number" name="cnh" required >
+                            </div>
+                            <div class="dados-formulario">
+                                <label>Validade</label>
+                                <input type="date" name="validade" required >
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Carro</legend>
+                            <div class="dados-formulario">
+                                <label>Modelo do Carro</label>
+                                <select name="modelo" required class="lista-modelo">
+                                    <option value="">Escolha um carro</option>
+                                    <optgroup label="Volkswagen">
+                                        <option value="gol">Gol</option>
+                                        <option value="jetta">Jetta</option>
+                                        <option value="polo">Polo</option>
+                                        <option value="virtus">Virtus</option>
+                                        <option value="fox">Fox</option>
+                                    </optgroup>
+                                    <optgroup label="Fiat">
+                                        <option value="strada">Strada</option>
+                                        <option value="toro">Toro</option>
+                                        <option value="argo">Argo</option>
+                                        <option value="pulse">Pulse</option>
+                                        <option value="mobi">Mobi</option>
+                                    </optgroup>
+                                    <optgroup label="Ford">
+                                        <option value="fiesta">Fiesta</option>
+                                        <option value="ka">ka</option>
+                                        <option value="ranger">Ranger</option>
+                                        <option value="focus">Focus</option>
+                                        <option value="ecosport">Ecosport</option>
+                                    </optgroup>
+                                    <optgroup label="Chevrolet">
+                                        <option value="onix">Onix</option>
+                                        <option value="spin">Spin</option>
+                                        <option value="cruze">Cruze</option>
+                                        <option value="s10">S10</option>
+                                        <option value="montana">Montana</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="botao-formulario">Enviar Dados</button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </section><!--container-formulario-->
 
     </main>
+
+    <footer class="rodape">
+        <p>Copyrigth 2023 - AluCar</p>
+        <p>Desenvolvido por <a href="https://github.com/uedsonoliveira" target="_blank">Uedson de Oliveira</a> / <a href="https://www.devmedia.com.br" target="_blank">DevMedia</a></p>
+    </footer><!--rodape-->
 
 </body>
 </html>
