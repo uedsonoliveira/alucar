@@ -12,26 +12,30 @@
 </head>
 <body>
     
-    <header>
+    <header class="cabecalho">
         <div class="limita-secao">
             <div class="logo-topo">
                 <h1>AluCar</h1>
+                <ul type="none" class="link-navegacao">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </header><!--cabecalho-->
 
     <main>
 
         <section class="container-banner">
             <div class="img-banner">
                 <div class="titulo-banner">
-                    <h2>AluCar</h2>
+                    <h2 class="titulo-responsivo">AluCar</h2>
                     <h2>Aluguel de Carros</h2>
                 </div>
             </div>
         </section><!--container-banner-->
 
-        <section class="container-sobre">
+        <section class="container-sobre" id="sobre">
             <div class="limita-secao">
                 <div class="info">
                     <h3>Sobre Nós</h3>
@@ -60,7 +64,7 @@
             </div>
         </section><!--container-info-->
 
-        <section class="container-contato">
+        <section class="container-contato" id="contato">
             <div class="secao-contato">
                 <h4>Contato</h4>
             </div>
@@ -72,7 +76,7 @@
                     <h3>Análise de cadastro</h3>
                     <p>Preencha os campos abaixo e analisaremos seus dados.</p>
                     <p>Se tudo estiver correto ligaremos para marcar uma visita a nossa loja.</p>
-                    <form action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+                    <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
                         <fieldset>
                             <legend>Dados Pessoais</legend>
                             <div class="dados-formulario">
@@ -144,10 +148,10 @@
 
     </main>
 
-    <footer class="rodape">
+    <footer class="container-rodape">
         <p>Copyrigth 2023 - AluCar</p>
         <p>Desenvolvido por <a href="https://github.com/uedsonoliveira" target="_blank">Uedson de Oliveira</a> / <a href="https://www.devmedia.com.br" target="_blank">DevMedia</a></p>
-    </footer><!--rodape-->
+    </footer><!--container-rodape-->
 
 </body>
 </html>
