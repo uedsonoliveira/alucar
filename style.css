@@ -53,6 +53,10 @@ body{
     font-size: 18px;
 }
 
+.link-navegacao a:hover{
+    color: #6c0000;
+}
+
 /*container-banner*/
 .img-banner{
     width: 100%;
@@ -225,7 +229,7 @@ body{
 }
 
 /*media querie*/
-@media screen and (max-width:750px){
+@media screen and (max-width:950px){
     .img-banner{
         width: 100%;
         height: 300px;
@@ -258,6 +262,9 @@ body{
 }
 
 @media screen and (max-width:500px){
+    .logo-topo{
+        padding-top: 10px;
+    }
     .link-navegacao{
         display: none;
     }
@@ -272,7 +279,7 @@ body{
         height: 150px;
     }
 
-    h3, p{
+    h3, h2, p{
         text-align: center;
     }
 }
